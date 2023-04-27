@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main,
+body,
+html {
+    min-height: 100vh;
+}
+
+header,
+nav {
+    background-color: #369831;
+    position: fixed;
+}
+
+header {
+    z-index: 999;   
+    width: 100%;
+}
+
+nav {
+    width: 300px;
+    height: 100vh;
+    display: none;
+    padding-top: 80px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a>svg {
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+nav li {
+    width: 100%;
+    padding: 5px;
+}
+
+main{
+    padding: 90px 10px 10px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .opcoesDoUserNav {
+        visibility: visible;
+    }
+
+    .opcoesDoUser {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .opcoesDoUserNav {
+        visibility: hidden;
+    }
+
+    .opcoesDoUser {
+        visibility: visible;
+    }
+}
+
+
+
+footer {
+    height: 60px;
+    background-color: #369831;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #369831;
+    background-clip: padding-box;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #33a685;
+}
